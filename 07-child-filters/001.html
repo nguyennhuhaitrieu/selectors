@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>$.each(arr,function(index, value)</title>
+<title>Child Filters</title>
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
 <script type="text/javascript" src="js/jquery-1.10.0.min.js"></script>
 
@@ -16,8 +16,11 @@
             //$("#boxA > :first-of-type").addClass("bg02");
 			//$("#boxB > :first-of-type").addClass("bg02");
 			
-			$("#boxA > :last-of-type").addClass("bg02");
-			$("#boxB > :last-of-type").addClass("bg02");
+			//var getText = $("#boxA > p:last-of-type").text();
+            //$("#result").text(getText);
+
+            $("#boxA > p:last-of-type").addClass("bg02");
+			$("#boxB > p:last-of-type").addClass("bg02");
         });
 	});
 </script>
@@ -42,6 +45,9 @@
         <p class="item">3. JSP</p>    
         <p class="item">4. Perl</p>  
         <p class="item">5. ASPX</p> 
+    </div>
+    <div class="boxA" id="result">
+        Kết quả trả về đây nè : 
     </div>
     
     <center>
