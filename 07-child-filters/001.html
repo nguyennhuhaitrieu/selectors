@@ -19,8 +19,16 @@
 			//var getText = $("#boxA > p:last-of-type").text();
             //$("#result").text(getText);
 
-            $("#boxA > p:last-of-type").addClass("bg02");
-			$("#boxB > p:last-of-type").addClass("bg02");
+            //$("#boxA > p:last-of-type").addClass("bg02");
+			//$("#boxB > p:last-of-type").addClass("bg02");
+
+            //$("#boxA > :nth-child(1)").addClass("bg02");
+			//$("#boxB > :nth-child(1)").addClass("bg02");
+
+            $("#boxA > :nth-child(2n+1)").addClass("bg02");
+			$("#boxB > :nth-child(2n+1)").addClass("bg02");
+
+            // Mai khùng lấy item cuối cùng get vào kết quả trả về 
         });
 	});
 </script>
