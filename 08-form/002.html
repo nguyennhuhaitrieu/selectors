@@ -11,9 +11,11 @@
 	
 		$("#process").click(function(e) {
          	//:TEXT
-			/*var username = $("#appForm :text[name='username']");
+			var username = $("#appForm :text[name='username']");
+			//var textUsername = ($(username).val());
+			//alert(textUsername);
 			$(username).addClass("bg02");
-			$("#info").html($(username).val());*/
+			$("#info").html($(username).val());
 			
 			//:PASSWORD
 			/*var password = $("#appForm :password[name='password']");
@@ -51,7 +53,7 @@
 			$("#info").html($(mobile2).val());*/
 			
 			//SELECT MULTI
-			var mobile2 = $("#appForm select[name='mobile2']");
+			/*var mobile2 = $("#appForm select[name='mobile2']");
 			$(mobile2).addClass("bg02");
 			var opts = $("#appForm select[name='mobile2'] option:selected");
 			var str = '';
@@ -59,6 +61,7 @@
                 str += $(this).val() + ",";
             });
 			$("#info").html(str);
+			*/
 			
 			
         });
