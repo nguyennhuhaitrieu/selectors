@@ -8,12 +8,13 @@
 
 <script type="text/javascript">
 	$(document).ready(function(){
-		$("#appForm :disabled").val("textbox đã bị khóa");
-		$("#appForm :enabled").val("Textbox này có thể nhập liệu được");
+		$("#appForm :disabled").val("Text box đã bị khóa");
+		$("#appForm :enabled").val("Text box được nhập liệu");
+
+		$('.js-process').click(function(){
+			$('#appForm :disabled').removeAttr("disabled").removeAttr("name");
+		});
 		
-		$("#process").click(function(e) {
-         	$("#appForm :disabled").removeAttr("disabled").removeAttr("name");
-    });
 	});
 </script>
 
@@ -21,22 +22,22 @@
 
 <body>
 	<center>
-    	<h1>Form elements</h1>
-    </center>
+  	<h1>Form elements</h1>
+  </center>
     
     <form id="appForm" name="appForm" class="boxA" method="post" action="" enctype="multipart/form-data">
     	<div>
         	Textbox 1: 
-            <input type="text" name="username" class="input" disabled="disabled"/>
-        </div>
-        <div>
-       		 Textbox 2: 
-             <input type="text" name="email" class="input"/>        
-        </div>
+          <input type="text" name="username" class="input" disabled="disabled"/>
+      </div>
+			<div>
+					Textbox 2: 
+					<input type="text" name="email" class="input"/>        
+			</div>
     </form>    
     
     <center>
-    	<input type="button" class="button" id="process" value="Process"/>
+    	<input type="button" class="button js-process" id="process" value="Process"/>
     </center>
 </body>
 
